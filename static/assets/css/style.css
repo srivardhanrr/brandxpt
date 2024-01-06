@@ -1154,6 +1154,8 @@ a:hover {
 .header .gallery-thumbs .swiper-slide.swiper-slide-active a {
   display: block;
 }
+
+
 .header .gallery-thumbs .swiper-slide a {
   font-size: 14px;
   display: none;
@@ -1539,7 +1541,7 @@ a:hover {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 150px;
+  padding-top: 100  px;
   padding-bottom: 50px;
 }
 .works.two-cols ul li {
