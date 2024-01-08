@@ -1,7 +1,8 @@
 from django.contrib import admin
 
-from home.models import Service, ServiceDetail
+from home.models import Service, ServiceDetail, Project, Contact
 
-# Register your models here.
 admin.site.register(Service)
 admin.site.register(ServiceDetail)
+admin.site.register(Project)
+admin.site.register(Contact)

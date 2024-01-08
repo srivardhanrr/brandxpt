@@ -1,0 +1,72 @@
+{% load static %}
+<footer class="footer __js_fixed-footer" xmlns:xlink="">
+      <div class="footer__container container container--size-large">
+        <div class="footer__grid">
+          <a class="footer__logo">
+            <svg width="49" height="242">
+              <use xlink:href="#vertical-logo"></use>
+            </svg>
+          </a>
+          <div class="footer__phone">
+            <a href="tel:+919663994748">+91 966 399 4748</a>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__title">Links</div>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item footer__menu-item--current">
+                <a class="footer__menu-link" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="{% url 'services' %}">Services</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Projects</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__title">Core Services</div>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Brand Growth</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Digital Solution</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Ecommerce Support</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Website Development</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__feedback">
+            <div class="footer__title">Join our newsletter</div>
+            <form class="footer__feedback-form" action="#" method="post">
+              <label class="footer__feedback-field field">
+                <input type="email" name="email">
+                <span class="field__hint">E-mail</span>
+              </label>
+              <button class="footer__feedback-send arrow-btn arrow-btn--size-large" type="button">
+                <svg width="75" height="75">
+                  <use xlink:href="#link-arrow"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="footer__feedback-notice">We only send interesting and relevant emails.</div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© BrandXPT 2024. All Rights Reserved</div>
+            <a class="footer__privacy" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>

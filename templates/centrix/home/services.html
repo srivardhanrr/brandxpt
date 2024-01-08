@@ -1,0 +1,188 @@
+{% extends 'centrix/base.html' %}
+{% load static %}
+
+{% block content %}
+    <main>
+    <article class="article services">
+        <div class="article__container container container--size-large">
+          <div class="row">
+            <header class="article__header col-12 col-lg-7 col-xl-6">
+              <h1 class="article__title">Our
+                <br>services
+              </h1>
+              <div class="article__text">In the design process, they create both functional and beautiful things. The team possesses unique</div>
+            </header>
+            <div class="services__item services__item--first col-12 col-sm-6 col-lg-5 col-xl-6" data-aos="">
+              <a class="service-preview" href="service-detail.html">
+                <span class="service-preview__image">
+                  <img src="{% static 'centrix/img/picture/services/1.jpg' %}" width="810" height="783" alt="Photography &lt;br&gt;&amp; Illustration">
+                </span>
+                <span class="service-preview__caption">Photography
+                  <br>& Illustration
+                </span>
+              </a>
+            </div>
+            <div class="services__item services__item--second services__item--margin-negative col-12 col-sm-6 col-lg-4" data-aos="fade-up">
+              <a class="service-preview" href="service-detail.html">
+                <span class="service-preview__image">
+                  <img src="{% static 'centrix/img/picture/services/2.jpg' %}" width="410" height="490" alt="Mobile &lt;br&gt;apps design">
+                </span>
+                <span class="service-preview__caption">Mobile
+                  <br>apps design
+                </span>
+              </a>
+            </div>
+            <div class="services__item services__item--third services__item--left-shift col-12 col-sm-6 col-lg-8" data-aos="fade-up">
+              <a class="service-preview" href="service-detail.html">
+                <span class="service-preview__image">
+                  <img src="{% static 'centrix/img/picture/services/3.jpg' %}" width="616" height="496" alt="Web development">
+                </span>
+                <span class="service-preview__caption">Web development</span>
+              </a>
+            </div>
+            <div class="services__item services__item--last col-12 col-sm-6 col-lg-10 offset-lg-1" data-aos="fade-up">
+              <a class="service-preview" href="service-detail.html">
+                <span class="service-preview__image">
+                  <img src="{% static 'centrix/img/picture/services/4.jpg' %}" width="1238" height="527" alt="Marketing">
+                </span>
+                <span class="service-preview__caption">Marketing</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section class="portfolio-section">
+        <div class="portfolio-section__container container container--size-large">
+          <h1 class="visually-hidden">Projects masonry</h1>
+          <ul class="portfolio-section__grid __js_portfolio-section-masonry">
+            <li class="portfolio-section__item __js_masonry-item">
+              <a class="project-preview project-preview--elastic project-preview--vertical" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/1-mobile.jpg' %}" alt="Realistic building">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Realistic building">Realistic building</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item">
+              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/2.jpg' %}" width="531" height="417" alt="Banana">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Banana">Banana</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item">
+              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/3.jpg' %}" width="531" height="417" alt="Abstract lists">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Abstract lists">Abstract lists</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
+              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/4-mobile.jpg' %}" alt="Green onion">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Green onion">Green onion</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item">
+              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/5.jpg' %}" width="536" height="417" alt="Banana">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Banana">Banana</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item">
+              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/6.jpg' %}" width="531" height="417" alt="Abstract lists">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Abstract lists">Abstract lists</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item">
+              <a class="project-preview project-preview--elastic project-preview--vertical" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/7-mobile.jpg' %}" alt="Realistic building">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Realistic building">Realistic building</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
+              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                <span class="project-preview__image">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/8-mobile.jpg' %}" alt="Green onion">
+                </span>
+                <span class="project-preview__bottom">
+                  <span class="project-preview__title" title="Green onion">Green onion</span>
+                  <span class="project-preview__icon">
+                    <svg width="24" height="23">
+                      <use xlink:href="#link-arrow2"></use>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <a class="portfolio-section__more circle-link" href="#">
+            <svg width="30" height="32">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+    </main>
+{% endblock %}

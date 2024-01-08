@@ -38,8 +38,8 @@
                     <div class="swiper-slide">
                         Collabration
                         <a href="#">Explore Case Study
-                        <div class="plus">+</div>
-                    </a>
+                            <div class="plus">+</div>
+                        </a>
                     </div>
                     <!-- end swiper-slide -->
                     <div class="swiper-slide"> The Biker<a href="#">Explore Case Study
@@ -75,7 +75,7 @@
         <section class="full-media-content bg-image" data-background="{% static 'assets/images/case03.png' %}">
             <div class="sides">
                 <figure class="wow fadeInLeft">
-{#                    <video><source src="{% static 'assets/videos/video.mp4' %}"></video>#}
+                    {#                    <video><source src="{% static 'assets/videos/video.mp4' %}"></video>#}
                     <img src="{% static 'assets/images/case02.png' %}" alt="Image">
                 </figure>
             </div>
@@ -93,7 +93,8 @@
             <!-- end sides -->
         </section>
         <!-- end full-media-content -->
-        <section class="works bg-image" style="padding-top: 20px;" data-background="{% static 'assets/images/case02.png' %}">
+        <section class="works bg-image" style="padding-top: 20px;"
+                 data-background="{% static 'assets/images/case02.png' %}">
             <h1 style="color: white; font-weight: bold; padding-left: 27%;">SERVICES</h1>
             <br><br><br>
             <ul>
@@ -237,6 +238,91 @@
                 <!-- end row -->
             </div>
             <!-- end container -->
+        </section>
+
+        <section class="full-media-content">
+            <div class="video-bg">
+                <video src="{% static 'assets/videos/video2.mp4' %}" autoplay muted loop></video>
+            </div>
+            <!-- end video-bg -->
+            <div class="sides hide-mobile">
+            </div>
+            <!-- end sides -->
+            <div class="sides inner-content">
+                <div class="inner">
+                    <h5>Collaborative approach</h5>
+                    <h2>INTERFACE</h2>
+                    <p>To create a powerful project once, a bit of luck is enough. To generate good products regularly,
+                        you need a strong foundation of experience and skills.</p>
+                    <a href="#">DISCOVER NOW</a></div>
+                <!-- end inner -->
+            </div>
+            <!-- end sides -->
+        </section>
+
+        <section class="works">
+            <div class="works__container container container--size-large">
+                <header class="works__header">
+                    <div class="row">
+                        <div class="col-8" data-aos="fade-up">
+                            <h2 class="works__title">
+                                <span>Look what</span>We do
+                            </h2>
+                        </div>
+                        <div class="col-4 text-md-right" data-aos="fade-up">
+                            <a class="works__more arrow-link--white arrow-link" href="projects-masonry.html">
+                                <span class="arrow-link__text">View all</span>
+                                <span class="arrow-link__icon">
+                    <svg width="75" height="75">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <div class="works__carousel carousel swiper-container __js_carousel" data-aos="fade-up">
+                    <div class="carousel__navigation">
+                        <button class="carousel__btn carousel__btn--prev" type="button">Prev</button>
+                        <button class="carousel__btn carousel__btn--next" type="button">Next</button>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <a class="carousel__item carousel-card swiper-slide" href="single-project.html">
+                            <img src="img/picture/carousel/1.jpg" width="662" height="510" alt="Desk Issue 0.1">
+                            <span class="carousel-card__bottom">
+                  <span class="carousel-card__title">Desk Issue 0.1</span>
+                  <span class="carousel-card__icon">
+                    <svg width="29" height="29">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                </span>
+                        </a>
+                        <a class="carousel__item carousel-card swiper-slide" href="single-project.html">
+                            <img src="img/picture/carousel/2.jpg" width="662" height="510" alt="Desk Issue 0.1">
+                            <span class="carousel-card__bottom">
+                  <span class="carousel-card__title">Desk Issue 0.1</span>
+                  <span class="carousel-card__icon">
+                    <svg width="29" height="29">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                </span>
+                        </a>
+                        <a class="carousel__item carousel-card swiper-slide" href="single-project.html">
+                            <img src="img/picture/carousel/3.jpg" width="662" height="510" alt="Desk Issue 0.1">
+                            <span class="carousel-card__bottom">
+                  <span class="carousel-card__title">Desk Issue 0.1</span>
+                  <span class="carousel-card__icon">
+                    <svg width="29" height="29">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="logos">
