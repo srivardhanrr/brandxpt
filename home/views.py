@@ -1,14 +1,13 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
-from home.models import Service, Project, Contact
+from home.models import Service, Project, Contact, Subscribe
 
 
 def home(request):
     services = Service.objects.all()
     projects = Project.objects.all()
     context = {'services': services, 'projects': projects}
-    return render(request, 'centrix/home/index.html', context)
+    return render(request, 'home/index.html', context)
 
 
 def project_detail(request, pk):
@@ -25,10 +24,26 @@ def contact(request):
         print(name, email, message)
         Contact.objects.create(name=name, email=email, message=message).save()
         return HttpResponse('Thank you for your message!')
-    return render(request, 'centrix/home/contact.html')
+    return render(request, 'home/contact.html')
 
 
 def service(request):
     services = Service.objects.all().values('title', 'image', 'description')
     context = {'services': services}
     return render(request, 'centrix/home/services.html', context)
+
+
+def project(request):
+    projects = Project.objects.all()
+    context = {'projects': projects}
+    return render(request, 'centrix/home/projects.html', context)
+
+
+def subscribe(request):
+    if request.POST:
+        email = request.POST.get('email')
+        Subscribe.objects.create(email=email).save()
+        print(email)
+        return HttpResponse('Thank you for subscribing!')
+
+

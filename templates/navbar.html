@@ -6,13 +6,13 @@
     <ul>
       <li>
           <a href="#">BrandXPT</a>
-      	 <ul style="opacity: 1; visibility: visible; transition-delay: 2s;">
-          <li><a href="home/index.html">Slider</a></li>
-          <li><a href="index-video-bg.html">Video BG</a></li>
-          <li><a href="index-particles.html">Particles</a></li>
-          <li><a href="index-motion-blur.html">Motion Blur</a></li>
-          <li><a href="index-animation.html">Animation</a></li>
-        </ul>
+{#      	 <ul>#}
+{#          <li><a href="home/index.html">Slider</a></li>#}
+{#          <li><a href="index-video-bg.html">Video BG</a></li>#}
+{#          <li><a href="index-particles.html">Particles</a></li>#}
+{#          <li><a href="index-motion-blur.html">Motion Blur</a></li>#}
+{#          <li><a href="index-animation.html">Animation</a></li>#}
+{#        </ul>#}
       </li>
       <li><a href="{% url 'home' %}">Digital Solutions</a></li>
       <li><a href="#">E-commerce Support</a>
@@ -22,14 +22,16 @@
 {#          <li><a href="showcases-two-cols.html">2 Columns</a></li>#}
 {#        </ul>#}
       </li>
-      <li><a href="news.html">Thinking Lab</a></li>
-      <li><a href="say-hello.html">More</a>
-      <ul>
-          <li><a href="home/index.html">Slider</a></li>
-          <li><a href="index-video-bg.html">Video BG</a></li>
-          <li><a href="index-particles.html">Particles</a></li>
-          <li><a href="index-motion-blur.html">Motion Blur</a></li>
-          <li><a href="index-animation.html">Animation</a></li>
+      <li><a href="#">Thinking Lab</a></li>
+      <li><a href="#">More</a>
+      <ul
+{#              style="opacity: 1; visibility: visible; transition-delay: 2s;"#}
+      >
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'projects' %}">Projects</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+{#          <li><a href="#">Animation</a></li>#}
         </ul>
       </li>
 {#      <li><a href="say-hello.html">Say Hello</a></li>#}
@@ -44,7 +46,7 @@
 </nav>
 <!-- end navigation-menu -->
   <nav class="navbar">
-    <div class="logo"> <a href="home/index.html"><img src="{% static 'assets/images/logo.png' %}" alt="Image"></a> </div>
+    <div class="logo"> <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo-brandxpt.png' %}" alt="Image"></a> </div>
     <!-- end logo -->
     <div class="email-us">Say <a href="#"><span>hello</span>@brandxpt.com</a></div>
     <!-- end email-us -->

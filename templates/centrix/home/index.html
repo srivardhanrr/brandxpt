@@ -4,102 +4,116 @@
 
 {% block content %}
     <main xmlns:xlink="">
-      <section class="hero">
-        <div class="hero__bg __js_parallax">
-          <img src="{% static 'centrix/img/brandxpt/yellow-cart.webp' %}" width="1920" height="1080" alt="">
-        </div>
-        <div class="hero__container container container--size-large">
-          <header class="hero__header">
-            <div class="container container--size-large">
-              <h1 class="hero__title">Unique Design step<span>with the times</span>
-              </h1>
-              <a class="hero__more arrow-link" href="about-us.html">
-                <span class="arrow-link__text">About us</span>
-                <span class="arrow-link__icon">
+        <section class="hero">
+            <div class="hero__bg __js_parallax">
+                <img src="{% static 'centrix/img/brandxpt/yellow-cart.webp' %}" width="1920" height="1080" alt="">
+            </div>
+            <div class="hero__container container container--size-large">
+                <header class="hero__header">
+                    <div class="container container--size-large">
+                        <h1 class="hero__title">Unique Design step<span>with the times</span>
+                        </h1>
+                        <a class="hero__more arrow-link" href="about-us.html">
+                            <span class="arrow-link__text">About us</span>
+                            <span class="arrow-link__icon">
                   <svg width="75" height="75">
                     <use xlink:href="#link-arrow"></use>
                   </svg>
                 </span>
-              </a>
+                        </a>
+                    </div>
+                </header>
+                <div class="hero__content">
+                    <div class="hero__vertical vertical-logo">
+                        <div class="vertical-logo__layer vertical-logo__layer--yellow">
+                            <svg width="59" height="242">
+                                <use xlink:href="#vertical-logo"></use>
+                            </svg>
+                        </div>
+                        <div class="vertical-logo__layer vertical-logo__layer--black">
+                            <svg width="59" height="242">
+                                <use xlink:href="#vertical-logo"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </header>
-          <div class="hero__content">
-            <div class="hero__vertical vertical-logo">
-              <div class="vertical-logo__layer vertical-logo__layer--yellow">
-                <svg width="59" height="242">
-                  <use xlink:href="#vertical-logo"></use>
-                </svg>
-              </div>
-              <div class="vertical-logo__layer vertical-logo__layer--black">
-                <svg width="59" height="242">
-                  <use xlink:href="#vertical-logo"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="features">
-        <div class="features__container container container--size-large">
-          <div class="row">
-            <div class="col-12 col-md-0 col-lg-4"></div>
-            <div class="col-12 col-md-12 col-lg-8">
-              <div class="features__description" data-aos="fade-up">Our intelligent digital strategy and a pragmatic and thoughtful approach to solving business calls deliver a successful framework for both you and your audience.</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-5">
-              <a class="features__card features__card--size-large feature-card" href="#" data-aos="fade-up">
+        </section>
+        <section class="features">
+            <div class="features__container container container--size-large">
+                <div class="row">
+                    <div class="col-12 col-md-0 col-lg-4"></div>
+                    <div class="col-12 col-md-12 col-lg-8">
+                        <div class="features__description" data-aos="fade-up">Our intelligent digital strategy and a
+                            pragmatic and thoughtful approach to solving business calls deliver a successful framework
+                            for both you and your audience.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-5">
+                        <a class="features__card features__card--size-large feature-card" href="#" data-aos="fade-up">
                 <span class="feature-card__image">
-                  <img src="{% static 'centrix/img/picture/home/feature-1.jpg' %}" width="810" height="529" alt="questions">
+                  <img src="{% static 'centrix/img/picture/home/feature-1.jpg' %}" width="810" height="529"
+                       alt="questions">
                 </span>
-                <span class="feature-card__caption">We ask right
+                            <span class="feature-card__caption">We ask right
                   <br>questions
                 </span>
-              </a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-7">
-              <div class="features__text" data-aos="fade-up">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are”.</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-12 col-md-8 col-lg-5 d-flex">
-                  <a class="features__card features__card--size-small feature-card feature-card--mobile-same-size" href="#" data-aos="fade-up">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-7">
+                        <div class="features__text" data-aos="fade-up">In the design process, they create both
+                            functional and beautiful things. The team possesses unique individuality and strong
+                            qualifications and can easily translate something so abstract and visionary into a digital
+                            experience. They always put the clients first no matter how complicated the tasks are”.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-5 d-flex">
+                                <a class="features__card features__card--size-small feature-card feature-card--mobile-same-size"
+                                   href="#" data-aos="fade-up">
                     <span class="feature-card__image">
-                      <img src="{% static 'centrix/img/picture/home/feature-3.jpg' %}" width="410" height="490" alt="Concept">
+                      <img src="{% static 'centrix/img/picture/home/feature-3.jpg' %}" width="410" height="490"
+                           alt="Concept">
                     </span>
-                    <span class="feature-card__caption">We achieve the
+                                    <span class="feature-card__caption">We achieve the
                       <br>goal
                     </span>
-                  </a>
-                </div>
-                <div class="col-12 col-md-4 col-lg-7">
-                  <a class="features__card features__card--size-middle feature-card feature-card--mobile-same-size" href="#" data-aos="fade-up">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-7">
+                                <a class="features__card features__card--size-middle feature-card feature-card--mobile-same-size"
+                                   href="#" data-aos="fade-up">
                     <span class="feature-card__image">
-                      <img src="{% static 'centrix/img/picture/home/feature-2.jpg' %}" width="616" height="529" alt="Goal">
+                      <img src="{% static 'centrix/img/picture/home/feature-2.jpg' %}" width="616" height="529"
+                           alt="Goal">
                     </span>
-                    <span class="feature-card__caption">We develop
+                                    <span class="feature-card__caption">We develop
                       <br>a concept
                     </span>
-                  </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="portfolio-section">
-        <div class="portfolio-section__container container container--size-large">
-          <h1 class="visually-hidden">Projects masonry</h1>
-          <ul class="portfolio-section__grid __js_portfolio-section-masonry">
-            <li class="portfolio-section__item __js_masonry-item">
-              <a class="project-preview project-preview--elastic project-preview--vertical" href="single-project.html">
+        </section>
+        <section class="portfolio-section">
+            <div class="portfolio-section__container container container--size-large">
+                <h1 class="visually-hidden">Projects masonry</h1>
+                <ul class="portfolio-section__grid __js_portfolio-section-masonry">
+                    <li class="portfolio-section__item __js_masonry-item">
+                        <a class="project-preview project-preview--elastic project-preview--vertical"
+                           href="single-project.html">
                 <span class="project-preview__image">
-                  <img src="{% static 'centrix/img/picture/common/portfolio-section/1-mobile.jpg' %}" alt="Realistic building">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/1-mobile.jpg' %}"
+                       alt="Realistic building">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Realistic building">Realistic building</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -107,14 +121,15 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item">
-              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item">
+                        <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
                 <span class="project-preview__image">
-                  <img src="{% static 'centrix/img/picture/common/portfolio-section/2.jpg' %}" width="531" height="417" alt="Banana">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/2.jpg' %}" width="531" height="417"
+                       alt="Banana">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Banana">Banana</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -122,14 +137,15 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item">
-              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item">
+                        <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
                 <span class="project-preview__image">
-                  <img src="{% static 'centrix/img/picture/common/portfolio-section/3.jpg' %}" width="531" height="417" alt="Abstract lists">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/3.jpg' %}" width="531" height="417"
+                       alt="Abstract lists">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Abstract lists">Abstract lists</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -137,14 +153,14 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
-              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
+                        <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
                 <span class="project-preview__image">
                   <img src="{% static 'centrix/img/picture/common/portfolio-section/4-mobile.jpg' %}" alt="Green onion">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Green onion">Green onion</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -152,14 +168,15 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item">
-              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item">
+                        <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
                 <span class="project-preview__image">
-                  <img src="{% static 'centrix/img/picture/common/portfolio-section/5.jpg' %}" width="536" height="417" alt="Banana">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/5.jpg' %}" width="536" height="417"
+                       alt="Banana">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Banana">Banana</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -167,14 +184,15 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item">
-              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item">
+                        <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
                 <span class="project-preview__image">
-                  <img src="{% static 'centrix/img/picture/common/portfolio-section/6.jpg' %}" width="531" height="417" alt="Abstract lists">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/6.jpg' %}" width="531" height="417"
+                       alt="Abstract lists">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Abstract lists">Abstract lists</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -182,14 +200,16 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item">
-              <a class="project-preview project-preview--elastic project-preview--vertical" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item">
+                        <a class="project-preview project-preview--elastic project-preview--vertical"
+                           href="single-project.html">
                 <span class="project-preview__image">
-                  <img src="{% static 'centrix/img/picture/common/portfolio-section/7-mobile.jpg' %}" alt="Realistic building">
+                  <img src="{% static 'centrix/img/picture/common/portfolio-section/7-mobile.jpg' %}"
+                       alt="Realistic building">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Realistic building">Realistic building</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -197,14 +217,14 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-            <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
-              <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
+                        </a>
+                    </li>
+                    <li class="portfolio-section__item __js_masonry-item  portfolio-section__item--two-thirds">
+                        <a class="project-preview project-preview--elastic project-preview" href="single-project.html">
                 <span class="project-preview__image">
                   <img src="{% static 'centrix/img/picture/common/portfolio-section/8-mobile.jpg' %}" alt="Green onion">
                 </span>
-                <span class="project-preview__bottom">
+                            <span class="project-preview__bottom">
                   <span class="project-preview__title" title="Green onion">Green onion</span>
                   <span class="project-preview__icon">
                     <svg width="24" height="23">
@@ -212,186 +232,161 @@
                     </svg>
                   </span>
                 </span>
-              </a>
-            </li>
-          </ul>
-{#          <a class="portfolio-section__more circle-link" href="#">#}
-{#            <svg width="30" height="32">#}
-{#              <use xlink:href="#arrow-down"></use>#}
-{#            </svg>#}
-{#          </a>#}
-          <div class="about-video-section__statistics statistics">
-            <div class="statistics__container container">
-              <div class="row justify-content-between">
-                <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                  <div class="statistics__item-value">
-                    <span class="__js_number" data-end-value="25">0</span>
-                  </div>
-                  <div class="statistics__item-text">managers</div>
-                </div>
-                <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                  <div class="statistics__item-value">
-                    <span class="__js_number" data-end-value="200">0</span>
-                  </div>
-                  <div class="statistics__item-text">the person
-                    <br>in the team
-                  </div>
-                </div>
-                <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                  <div class="statistics__item-value">
-                    <span class="__js_number" data-end-value="15">0</span>
-                  </div>
-                  <div class="statistics__item-text">Years
-                    <br>experience
-                  </div>
-                </div>
-                <div class="statistics__item col-6 col-md-auto" data-aos="fade-up">
-                  <div class="statistics__item-value">
-                    <span class="__js_number" data-end-value="7">0</span>
-                  </div>
-                  <div class="statistics__item-text">awards and
-                    <br>accolades
-                  </div>
-                </div>
-              </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="portfolio-section__more circle-link" href="#">
+                    <svg width="30" height="32">
+                        <use xlink:href="#arrow-down"></use>
+                    </svg>
+                </a>
             </div>
-          </div>
-        </div>
-
-      </section>
-      <section class="our-services">
-        <div class="our-services__container container container--size-large">
-          <header class="our-services__header our-services__header--large" data-aos="fade-up">
-            <div class="row">
-              <div class="col-12 col-md-6 col-xl-5 col-xxl-3" data-aos="fade-up">
-                <h2 class="our-services__title our-services__title--upper">Our Services</h2>
-              </div>
-              <div class="col-12 col-md-12 col-xl-5 col-xxl-6 order-md-1 order-xl-0" data-aos="fade-up">
-                <div class="our-services__short">We’ve worked with a wide array of clients across the globe to apply design fundamentals of elegance, simplicity</div>
-              </div>
-              <div class="col-12 col-md-auto col-xl-2 col-xxl-3 ml-auto text-md-right" data-aos="fade-up">
-                <a class="our-services__more our-services__more--negative-top arrow-link--white arrow-link" href="services.html">
-                  <span class="arrow-link__text">View all</span>
-                  <span class="arrow-link__icon">
+        </section>
+        <section class="our-services">
+            <div class="our-services__container container container--size-large">
+                <header class="our-services__header our-services__header--large" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-5 col-xxl-3" data-aos="fade-up">
+                            <h2 class="our-services__title our-services__title--upper">Our Services</h2>
+                        </div>
+                        <div class="col-12 col-md-12 col-xl-5 col-xxl-6 order-md-1 order-xl-0" data-aos="fade-up">
+                            <div class="our-services__short">We’ve worked with a wide array of clients across the globe
+                                to apply design fundamentals of elegance, simplicity
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto col-xl-2 col-xxl-3 ml-auto text-md-right" data-aos="fade-up">
+                            <a class="our-services__more our-services__more--negative-top arrow-link--white arrow-link"
+                               href="services.html">
+                                <span class="arrow-link__text">View all</span>
+                                <span class="arrow-link__icon">
                     <svg width="75" height="75">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
                   </span>
-                </a>
-              </div>
-            </div>
-          </header>
-          <div class="our-services__accordion accordion">
-            <div class="accordion__item" data-aos="fade-up">
-              <button class="accordion__item-header" type="button">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <div class="our-services__accordion accordion">
+                    <div class="accordion__item" data-aos="fade-up">
+                        <button class="accordion__item-header" type="button">
                 <span class="row align-items-md-center">
                   <span class="accordion__item-title col-11 col-md-5">Design</span>
                   <span class="accordion__item-short col-11 col-md-6">Our intelligent digital strategy and a pragmatic and thoughtful approach to solving business calls deliver a successful framework for both you and your audience.</span>
                 </span>
-              </button>
-              <div class="accordion__item-body">
-                <div class="row">
-                  <div class="accordion__item-left col-12 col-md-6 col-lg-5">
-                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810" height="530" alt="Concept">
-                  </div>
-                  <div class="accordion__item-right col-12 col-md-6 col-lg-7">
-                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348" height="287" alt="Concept">
-                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item" data-aos="fade-up">
-              <button class="accordion__item-header" type="button">
+                        </button>
+                        <div class="accordion__item-body">
+                            <div class="row">
+                                <div class="accordion__item-left col-12 col-md-6 col-lg-5">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810"
+                                         height="530" alt="Concept">
+                                </div>
+                                <div class="accordion__item-right col-12 col-md-6 col-lg-7">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348"
+                                         height="287" alt="Concept">
+                                    {#                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-aos="fade-up">
+                        <button class="accordion__item-header" type="button">
                 <span class="row align-items-md-center">
                   <span class="accordion__item-title col-11 col-md-5">Development</span>
                   <span class="accordion__item-short col-11 col-md-6">We make our customers ' products valuable in the eyes of customers. To do this, we analyze and study people, build long-term strategies for interacting with them, develop creative ideas and create a bright design.</span>
                 </span>
-              </button>
-              <div class="accordion__item-body">
-                <div class="row">
-                  <div class="accordion__item-left col-12 col-md-6 col-lg-5">
-                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810" height="530" alt="Concept">
-                  </div>
-                  <div class="accordion__item-right col-12 col-md-6 col-lg-7">
-                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348" height="287" alt="Concept">
-                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item" data-aos="fade-up">
-              <button class="accordion__item-header" type="button">
+                        </button>
+                        <div class="accordion__item-body">
+                            <div class="row">
+                                <div class="accordion__item-left col-12 col-md-6 col-lg-5">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810"
+                                         height="530" alt="Concept">
+                                </div>
+                                <div class="accordion__item-right col-12 col-md-6 col-lg-7">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348"
+                                         height="287" alt="Concept">
+                                    {#                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-aos="fade-up">
+                        <button class="accordion__item-header" type="button">
                 <span class="row align-items-md-center">
                   <span class="accordion__item-title col-11 col-md-5">Graphic</span>
                   <span class="accordion__item-short col-11 col-md-6">Our intelligent digital strategy and a pragmatic and thoughtful approach to solving business calls deliver a successful framework for both you and your audience.</span>
                 </span>
-              </button>
-              <div class="accordion__item-body">
-                <div class="row">
-                  <div class="accordion__item-left col-12 col-md-6 col-lg-5">
-                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810" height="530" alt="Concept">
-                  </div>
-                  <div class="accordion__item-right col-12 col-md-6 col-lg-7">
-                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348" height="287" alt="Concept">
-                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion__item" data-aos="fade-up">
-              <button class="accordion__item-header" type="button">
+                        </button>
+                        <div class="accordion__item-body">
+                            <div class="row">
+                                <div class="accordion__item-left col-12 col-md-6 col-lg-5">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810"
+                                         height="530" alt="Concept">
+                                </div>
+                                <div class="accordion__item-right col-12 col-md-6 col-lg-7">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348"
+                                         height="287" alt="Concept">
+                                    {#                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-aos="fade-up">
+                        <button class="accordion__item-header" type="button">
                 <span class="row align-items-md-center">
                   <span class="accordion__item-title col-11 col-md-5">Wordpress</span>
                   <span class="accordion__item-short col-11 col-md-6">Our intelligent digital strategy and a pragmatic and thoughtful approach to solving business calls deliver a successful framework for both you and your audience.</span>
                 </span>
-              </button>
-              <div class="accordion__item-body">
-                <div class="row">
-                  <div class="accordion__item-left col-12 col-md-6 col-lg-5">
-                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810" height="530" alt="Concept">
-                  </div>
-                  <div class="accordion__item-right col-12 col-md-6 col-lg-7">
-                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348" height="287" alt="Concept">
-                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>
-                  </div>
+                        </button>
+                        <div class="accordion__item-body">
+                            <div class="row">
+                                <div class="accordion__item-left col-12 col-md-6 col-lg-5">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-large.jpg' %}" width="810"
+                                         height="530" alt="Concept">
+                                </div>
+                                <div class="accordion__item-right col-12 col-md-6 col-lg-7">
+                                    <img src="{% static 'centrix/img/picture/home/accordion-small.jpg' %}" width="348"
+                                         height="287" alt="Concept">
+                                    {#                    <div class="accordion__item-text">In the design process, they create both functional and beautiful things. The team possesses unique individuality and strong qualifications and can easily translate something so abstract and visionary into a digital experience. They always put the clients first no matter how complicated the tasks are.</div>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="works">
-        <div class="works__container container container--size-large">
-          <header class="works__header">
-            <div class="row">
-              <div class="col-8" data-aos="fade-up">
-                <h2 class="works__title">
-                  <span>Look what</span>We do
-                </h2>
-              </div>
-              <div class="col-4 text-md-right" data-aos="fade-up">
-                <a class="works__more arrow-link--white arrow-link" href="projects-masonry.html">
-                  <span class="arrow-link__text">View all</span>
-                  <span class="arrow-link__icon">
+        </section>
+        <section class="works">
+            <div class="works__container container container--size-large">
+                <header class="works__header">
+                    <div class="row">
+                        <div class="col-8" data-aos="fade-up">
+                            <h2 class="works__title">
+                                <span>Look what</span>We do
+                            </h2>
+                        </div>
+                        <div class="col-4 text-md-right" data-aos="fade-up">
+                            <a class="works__more arrow-link--white arrow-link" href="projects-masonry.html">
+                                <span class="arrow-link__text">View all</span>
+                                <span class="arrow-link__icon">
                     <svg width="75" height="75">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
                   </span>
-                </a>
-              </div>
-            </div>
-          </header>
-          <div class="works__carousel carousel swiper-container __js_carousel" data-aos="fade-up">
-            <div class="carousel__navigation">
-              <button class="carousel__btn carousel__btn--prev" type="button">Prev</button>
-              <button class="carousel__btn carousel__btn--next" type="button">Next</button>
-            </div>
-            <div class="swiper-wrapper">
-              {% for project in projects %}
-                  <a class="carousel__item carousel-card swiper-slide" href="{% url 'project_detail' project.id %}">
-                    <img src="{{ project.img.url }}" width="662" height="510" alt="Desk Issue 0.1">
-                    <span class="carousel-card__bottom">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <div class="works__carousel carousel swiper-container __js_carousel" data-aos="fade-up">
+                    <div class="carousel__navigation">
+                        <button class="carousel__btn carousel__btn--prev" type="button">Prev</button>
+                        <button class="carousel__btn carousel__btn--next" type="button">Next</button>
+                    </div>
+                    <div class="swiper-wrapper">
+                        {% for project in projects %}
+                            <a class="carousel__item carousel-card swiper-slide"
+                               href="{% url 'project_detail' project.id %}">
+                                <img src="{{ project.img.url }}" width="662" height="510" alt="Desk Issue 0.1">
+                                <span class="carousel-card__bottom">
                       <span class="carousel-card__title">{{ project.title }}</span>
                       <span class="carousel-card__icon">
                         <svg width="29" height="29">
@@ -399,205 +394,318 @@
                         </svg>
                       </span>
                     </span>
-                  </a>
-              {% endfor %}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="tooltip container--size-large tooltip--theme-dark">
-        <div class="tooltip__container container container--size-large">
-          <a class="tooltip__btn round-button" href="#">
+        </section>
+        <section class="tooltip container--size-large tooltip--theme-dark">
+            <div class="tooltip__container container container--size-large">
+                <a class="tooltip__btn round-button" href="#">
             <span class="round-button__circle">
               <svg width="251" height="251">
                 <use xlink:href="#circle-text"></use>
               </svg>
             </span>
-            <span class="round-button__c">
+                    <span class="round-button__c">
               <svg width="67" height="61">
                 <use xlink:href="#c"></use>
               </svg>
             </span>
-          </a>
-          <div class="tooltip__section">
-            <div class="tooltip__marquee __js-marquee">
-              <div class="tooltip__list">
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/kodak.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/kodak@2x.jpg' %}" data-image-w="404" data-image-h="491" data-webp="true">Kodak</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/swiss-typography.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/swiss-typography.jpg' %}" data-image-w="662" data-image-h="510" data-webp="true">Swiss typography</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/copenhghagen.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/copenhghagen.jpg' %}" data-image-w="334" data-image-h="255" data-webp="true">Copenhghagen</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/bottle.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/bottle.jpg' %}" data-image-w="720" data-image-h="548" data-webp="true">Bottle</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/exoape.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/exoape@2x.jpg' %}" data-image-w="719" data-image-h="846" data-webp="true">Exoape</a>
-              </div>
+                </a>
+                <div class="tooltip__section">
+                    <div class="tooltip__marquee __js-marquee">
+                        <div class="tooltip__list">
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">SEO</a>
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Google Ads</a>
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Marketing</a>
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Branding</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip__section">
+                    <div class="tooltip__marquee __js-marquee--reverse">
+                        <div class="tooltip__list">
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Web Development</a>
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Editing</a>
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Photoshoot</a>
+                            <a class="tooltip__item animsition-link" href="{% url 'services' %}">Content</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="tooltip__section">
-            <div class="tooltip__marquee __js-marquee--reverse">
-              <div class="tooltip__list">
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/kodak.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/kodak@2x.jpg' %}" data-image-w="404" data-image-h="491" data-webp="true">Kodak</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/swiss-typography.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/swiss-typography.jpg' %}" data-image-w="662" data-image-h="510" data-webp="true">Swiss typography</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/copenhghagen.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/copenhghagen.jpg' %}" data-image-w="334" data-image-h="255" data-webp="true">Copenhghagen</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/bottle.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/bottle.jpg' %}" data-image-w="720" data-image-h="548" data-webp="true">Bottle</a>
-                <a class="tooltip__item animsition-link" href="single-project.html" data-image="{% static 'centrix/img/picture/common/tooltip/exoape.jpg' %}" data-image2x="{% static 'centrix/img/picture/common/tooltip/exoape@2x.jpg' %}" data-image-w="719" data-image-h="846" data-webp="true">Exoape</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
         <div class="pricing__container container">
             <header class="works__header">
-            <div class="row">
-              <div class="col-8" data-aos="fade-up">
-                <h2 class="works__title">
-                  Pricing
-                </h2>
-              </div>
-              <div class="col-4 text-md-right" data-aos="fade-up">
-                <a class="works__more arrow-link--white arrow-link" href="projects-masonry.html">
-                  <span class="arrow-link__text">View all</span>
-                  <span class="arrow-link__icon">
+                <div class="row">
+                    <div class="col-8" data-aos="fade-up">
+                        <h2 class="works__title">
+                            Pricing
+                        </h2>
+                    </div>
+                    <div class="col-4 text-md-right" data-aos="fade-up">
+                        <a class="works__more arrow-link--white arrow-link">
+                            <span class="arrow-link__text">View all</span>
+                            <span class="arrow-link__icon">
                     <svg width="75" height="75">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
                   </span>
-                </a>
-              </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="row pricing__grid">
+                <section class="card-price pricing__card col-12 col-lg-4" data-aos="fade-up">
+                    <div class="card-price__wrapper">
+                        <div class="card-price__plan" data-aos="fade-up">Basic</div>
+                        <div class="card-price__price" data-aos="fade-up">
+                            <sup>$</sup> 29 <span>/ mo</span>
+                        </div>
+                        <ul class="card-price__list">
+                            <li class="yellow" data-aos="fade-up">Gathered day, years she'd upon, greater.</li>
+                            <li data-aos="fade-up">Kind cattle won't bearing.</li>
+                            <li data-aos="fade-up">own night two above.</li>
+                        </ul>
+                        <a class="card-price__btn btn" href="#" data-aos="fade-up">
+                            <span class="btn__text">join now</span>
+                            <span class="btn__icon">
+                    <svg width="19" height="19">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                        </a>
+                    </div>
+                </section>
+                <section class="card-price card-price--gradient pricing__card col-12 col-lg-4" data-aos="fade-up">
+                    <div class="card-price__wrapper">
+                        <div class="card-price__plan" data-aos="fade-up">Standard</div>
+                        <div class="card-price__price" data-aos="fade-up">
+                            <sup>$</sup> 39 <span>/ mo</span>
+                        </div>
+                        <ul class="card-price__list">
+                            <li class="yellow" data-aos="fade-up">Gathered day, years she'd upon, greater.</li>
+                            <li class="yellow" data-aos="fade-up">Kind cattle won't bearing.</li>
+                            <li data-aos="fade-up">own night two above.</li>
+                        </ul>
+                        <a class="btn--outline card-price__btn card-price__btn--outline btn" href="#"
+                           data-aos="fade-up">
+                            <span class="btn__text">join now</span>
+                            <span class="btn__icon">
+                    <svg width="19" height="19">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                        </a>
+                    </div>
+                </section>
+                <section class="card-price card-price--yellow pricing__card col-12 col-lg-4" data-aos="fade-up">
+                    <div class="card-price__wrapper">
+                        <div class="card-price__plan" data-aos="fade-up">Support</div>
+                        <div class="card-price__price" data-aos="fade-up">
+                            <sup>$</sup> 69 <span>/ mo</span>
+                        </div>
+                        <ul class="card-price__list">
+                            <li class="yellow" data-aos="fade-up">Gathered day, years she'd upon, greater.</li>
+                            <li data-aos="fade-up">Kind cattle won't bearing.</li>
+                            <li data-aos="fade-up">own night two above.</li>
+                        </ul>
+                        <a class="btn--outline card-price__btn card-price__btn--outline btn" href="#"
+                           data-aos="fade-up">
+                            <span class="btn__text">join now</span>
+                            <span class="btn__icon">
+                    <svg width="19" height="19">
+                      <use xlink:href="#link-arrow"></use>
+                    </svg>
+                  </span>
+                        </a>
+                    </div>
+                </section>
             </div>
-          </header>
-          <div class="row pricing__grid">
-            <section class="card-price pricing__card col-12 col-lg-4" data-aos="fade-up">
-              <div class="card-price__wrapper">
-                <div class="card-price__plan" data-aos="fade-up">Basic</div>
-                <div class="card-price__price" data-aos="fade-up">
-                  <sup>$</sup> 29 <span>/ mo</span>
-                </div>
-                <ul class="card-price__list">
-                  <li class="yellow" data-aos="fade-up">Gathered day, years she'd upon, greater.</li>
-                  <li data-aos="fade-up">Kind cattle won't bearing.</li>
-                  <li data-aos="fade-up">own night two above.</li>
-                </ul>
-                <a class="card-price__btn btn" href="#" data-aos="fade-up">
-                  <span class="btn__text">join now</span>
-                  <span class="btn__icon">
-                    <svg width="19" height="19">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </section>
-            <section class="card-price card-price--gradient pricing__card col-12 col-lg-4" data-aos="fade-up">
-              <div class="card-price__wrapper">
-                <div class="card-price__plan" data-aos="fade-up">Standard</div>
-                <div class="card-price__price" data-aos="fade-up">
-                  <sup>$</sup> 39 <span>/ mo</span>
-                </div>
-                <ul class="card-price__list">
-                  <li class="yellow" data-aos="fade-up">Gathered day, years she'd upon, greater.</li>
-                  <li class="yellow" data-aos="fade-up">Kind cattle won't bearing.</li>
-                  <li data-aos="fade-up">own night two above.</li>
-                </ul>
-                <a class="btn--outline card-price__btn card-price__btn--outline btn" href="#" data-aos="fade-up">
-                  <span class="btn__text">join now</span>
-                  <span class="btn__icon">
-                    <svg width="19" height="19">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </section>
-            <section class="card-price card-price--yellow pricing__card col-12 col-lg-4" data-aos="fade-up">
-              <div class="card-price__wrapper">
-                <div class="card-price__plan" data-aos="fade-up">Support</div>
-                <div class="card-price__price" data-aos="fade-up">
-                  <sup>$</sup> 69 <span>/ mo</span>
-                </div>
-                <ul class="card-price__list">
-                  <li class="yellow" data-aos="fade-up">Gathered day, years she'd upon, greater.</li>
-                  <li data-aos="fade-up">Kind cattle won't bearing.</li>
-                  <li data-aos="fade-up">own night two above.</li>
-                </ul>
-                <a class="btn--outline card-price__btn card-price__btn--outline btn" href="#" data-aos="fade-up">
-                  <span class="btn__text">join now</span>
-                  <span class="btn__icon">
-                    <svg width="19" height="19">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </section>
-          </div>
-      <section class="contact-section">
-        <div class="contact-section__container container container--size-large">
-          <div class="row">
-            <div class="contact-section__main col-12 col-lg">
-              <h2 class="contact-section__title" data-aos="fade-up">Contact</h2>
-              <address class="contact-section__address" data-aos="fade-up">Pai Layout, Bengaluru, 560029</address>
-              <div class="contact-section__link" data-aos="fade-up">
-                <a href="tel:+919663994748">+91 966 399 4748</a>
-              </div>
-              <div class="contact-section__link" data-aos="fade-up">
-                <a href="mailto:connect@brandxpt.com">connect@brandxpt.com</a>
-              </div>
-              <ul class="contact-section__social" data-aos="fade-up">
-                <li>
-                  <a href="#">Facebook</a>
-                </li>
-                <li>
-                  <a href="#">Twitter</a>
-                </li>
-                <li>
-                  <a href="#">Instagram</a>
-                </li>
-                <li>
-                  <a href="#">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-            <div class="contact-section__aside col-12 col-lg" data-aos="fade-up">
-              <div class="discuss-project discuss-project--no-padding col-12">
-                <div class="discuss-project__wrapper" data-aos="fade-up">
-                  <div class="discuss-project__title" data-aos="fade-up">Send request</div>
-                  <form action="{% url 'contact' %}" method="post">
-                      {% csrf_token %}
-                    <div class="row justify-content-between gx-0">
-                      <div class="col-12" data-aos="fade-up">
-                        <label class="discuss-project__field field">
-                          <input type="text" name="name">
-                          <span class="field__hint">Name</span>
-                        </label>
-                      </div>
-                      <div class="col-12" data-aos="fade-up">
-                        <label class="discuss-project__field field">
-                          <input type="email" name="email">
-                          <span class="field__hint">Email</span>
-                        </label>
-                      </div>
-                      <div class="col-12" data-aos="fade-up">
-                        <label class="discuss-project__field discuss-project__field--textarea field">
-                          <textarea name="message" required></textarea>
-                          <span class="field__hint">Message</span>
-                        </label>
-                      </div>
-                      <div class="discuss-project__bottom col-12">
-                        <button class="discuss-project__send btn--theme-black btn" type="submit" data-aos="fade-up">
-                          <span class="btn__text">Submit</span>
-                          <span class="btn__icon">
+        </div>
+        <section class="contact-section">
+            <div class="contact-section__container container container--size-large">
+                <div class="row">
+                    <div class="contact-section__main col-12 col-lg">
+                        <h2 class="contact-section__title" data-aos="fade-up">Contact</h2>
+                        <address class="contact-section__address" data-aos="fade-up">Pai Layout, Bengaluru, 560029
+                        </address>
+                        <div class="contact-section__link" data-aos="fade-up">
+                            <a href="tel:+919663994748">+91 966 399 4748</a>
+                        </div>
+                        <div class="contact-section__link" data-aos="fade-up">
+                            <a href="mailto:connect@brandxpt.com">connect@brandxpt.com</a>
+                        </div>
+                        <ul class="contact-section__social" data-aos="fade-up">
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-section__aside col-12 col-lg" data-aos="fade-up">
+                        <div class="discuss-project discuss-project--no-padding col-12">
+                            <div class="discuss-project__wrapper" data-aos="fade-up">
+                                <div class="discuss-project__title" data-aos="fade-up">Send request</div>
+                                <form action="{% url 'contact' %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="row justify-content-between gx-0">
+                                        <div class="col-12" data-aos="fade-up">
+                                            <label class="discuss-project__field field">
+                                                <input type="text" name="name">
+                                                <span class="field__hint">Name</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <label class="discuss-project__field field">
+                                                <input type="email" name="email">
+                                                <span class="field__hint">Email</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <label class="discuss-project__field discuss-project__field--textarea field">
+                                                <textarea name="message" required></textarea>
+                                                <span class="field__hint">Message</span>
+                                            </label>
+                                        </div>
+                                        <div class="discuss-project__bottom col-12">
+                                            <button class="discuss-project__send btn--theme-black btn" type="submit"
+                                                    data-aos="fade-up">
+                                                <span class="btn__text">Submit</span>
+                                                <span class="btn__icon">
                             <svg width="19" height="19">
                               <use xlink:href="#link-arrow"></use>
                             </svg>
                           </span>
-                        </button>
-                      </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                  </form>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+            {#            <div class="start-project__bottom partners partners--no-padding col-12 col-lg-4">#}
+            {#                <ul class="partners__list row align-items-center">#}
+            {#                    <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">#}
+            {#                        <img src="{% static 'centrix/img/picture/partners/1.png' %}" width="117" height="47"#}
+            {#                             alt="behr handelsagentur">#}
+            {#                    </li>#}
+            {#                    <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">#}
+            {#                        <img src="{% static 'centrix/img/picture/partners/2.png' %}" width="139" height="68"#}
+            {#                             alt="christopher willis">#}
+            {#                    </li>#}
+            {#                    <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">#}
+            {#                        <img src="{% static 'centrix/img/picture/partners/3.png' %}" width="150" height="45"#}
+            {#                             alt="artchive crafts gallery">#}
+            {#                    </li>#}
+            {#                    <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">#}
+            {#                        <img src="{% static 'centrix/img/picture/partners/4.png' %}" width="125" height="32"#}
+            {#                             alt="artchive crasfts gallery">#}
+            {#                    </li>#}
+            {#                    <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">#}
+            {#                        <img src="{% static 'centrix/img/picture/partners/5.png' %}" width="104" height="38"#}
+            {#                             alt="neuton interactive">#}
+            {#                    </li>#}
+            {#                    <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">#}
+            {#                        <img src="{% static 'centrix/img/picture/partners/6.png' %}" width="134" height="29"#}
+            {#                             alt="francoins redblade">#}
+            {#                    </li>#}
+            {#                </ul>#}
+            {#            </div>#}
+        </section>
+        <section class="start-project">
+            <div class="start-project__container container container--size-large">
+                {#                <h1 class="start-project__title" data-aos="fade-up">Start A PROJECT?</h1>#}
+                <div class="start-project__grid row g-0">
+                    {#            <div class="start-project__discuss discuss-project discuss-project--no-padding col-12 col-lg-8">#}
+                    {#              <div class="discuss-project__wrapper" data-aos="fade-up">#}
+                    {#                <form action="#" method="post">#}
+                    {#                  <div class="row justify-content-between gx-0">#}
+                    {#                    <div class="discuss-project__field-wrapper col-12 col-md-6" data-aos="fade-up">#}
+                    {#                      <label class="discuss-project__field field">#}
+                    {#                        <input type="text" name="name">#}
+                    {#                        <span class="field__hint">Name</span>#}
+                    {#                      </label>#}
+                    {#                    </div>#}
+                    {#                    <div class="discuss-project__field-wrapper col-12 col-md-6" data-aos="fade-up">#}
+                    {#                      <label class="discuss-project__field field">#}
+                    {#                        <input type="email" name="email">#}
+                    {#                        <span class="field__hint">Email</span>#}
+                    {#                      </label>#}
+                    {#                    </div>#}
+                    {#                    <div class="col-12" data-aos="fade-up">#}
+                    {#                      <label class="discuss-project__field discuss-project__field--textarea field">#}
+                    {#                        <textarea name="message" required></textarea>#}
+                    {#                        <span class="field__hint">Message</span>#}
+                    {#                      </label>#}
+                    {#                    </div>#}
+                    {#                    <div class="discuss-project__bottom col-12">#}
+                    {#                      <div class="discuss-project__file file-upload" data-aos="fade-up">#}
+                    {#                        <label class="file-upload__label">#}
+                    {#                          <input class="visually-hidden" type="file">#}
+                    {#                          <span class="file-upload__icon">#}
+                    {#                            <svg width="16" height="16">#}
+                    {#                              <use xlink:href="#paper-clip"></use>#}
+                    {#                            </svg>#}
+                    {#                          </span>#}
+                    {#                          <span class="file-upload__text">Attach a file</span>#}
+                    {#                        </label>#}
+                    {#                      </div>#}
+                    {#                      <button class="discuss-project__send btn--theme-black btn" type="submit" data-aos="fade-up">#}
+                    {#                        <span class="btn__text">Submit</span>#}
+                    {#                        <span class="btn__icon">#}
+                    {#                          <svg width="19" height="19">#}
+                    {#                            <use xlink:href="#link-arrow"></use>#}
+                    {#                          </svg>#}
+                    {#                        </span>#}
+                    {#                      </button>#}
+                    {#                    </div>#}
+                    {#                  </div>#}
+                    {#                </form>#}
+                    {#              </div>#}
+                    {#            </div>#}
+                    <div class="start-project__partners partners partners--no-padding col-12 col-lg-4">
+                        <ul class="partners__list row align-items-center">
+                            <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">
+                                <img src="{% static 'centrix/img/picture/partners/1.png' %}" width="117" height="47"
+                                     alt="behr handelsagentur">
+                            </li>
+                            <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">
+                                <img src="{% static 'centrix/img/picture/partners/2.png' %}" width="139" height="68"
+                                     alt="christopher willis">
+                            </li>
+                            <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">
+                                <img src="{% static 'centrix/img/picture/partners/3.png' %}" width="150" height="45"
+                                     alt="artchive crafts gallery">
+                            </li>
+                            <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">
+                                <img src="{% static 'centrix/img/picture/partners/4.png' %}" width="125" height="32"
+                                     alt="artchive crasfts gallery">
+                            </li>
+                            <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">
+                                <img src="{% static 'centrix/img/picture/partners/5.png' %}" width="104" height="38"
+                                     alt="neuton interactive">
+                            </li>
+                            <li class="partners__item col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6" data-aos="fade-up">
+                                <img src="{% static 'centrix/img/picture/partners/6.png' %}" width="134" height="29"
+                                     alt="francoins redblade">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 {% endblock %}

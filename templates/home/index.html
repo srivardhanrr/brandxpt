@@ -3,29 +3,30 @@
 
 
 {% block body %}
-    <header class="header">
+    <header class="header" xmlns:xlink="">
         <div class="slider">
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slide-inner bg-image"
-                             data-background="{% static 'assets/images/slideitem01.jpg' %}"></div>
-                        <!-- end slide-inner -->
-                    </div>
-                    <!-- end swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="slide-inner bg-image" data-background="{% static 'assets/images/dawn.jpg' %}"></div>
+                             data-background="{% static 'assets/images/home-1.webp' %}"></div>
                         <!-- end slide-inner -->
                     </div>
                     <!-- end swiper-slide -->
                     <div class="swiper-slide">
                         <div class="slide-inner bg-image"
-                             data-background="{% static 'assets/images/night.jpg' %}"></div>
+                             data-background="{% static 'assets/images/home-2.webp' %}"></div>
+                        <!-- end slide-inner -->
+                    </div>
+                    <!-- end swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner bg-image"
+                             data-background="{% static 'assets/images/home-3.webp' %}"></div>
                         <!-- end slide-inner -->
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-inner bg-image"
-                             data-background="{% static 'assets/images/night.jpg' %}"></div>
+                             data-background="{% static 'assets/images/home-2.webp' %}"></div>
                         <!-- end slide-inner -->
                     </div>
                     <!-- end swiper-slide -->
@@ -35,21 +36,20 @@
             </div>
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        Collabration
+                    <div class="swiper-slide">Web Design
                         <a href="#">Explore Case Study
                             <div class="plus">+</div>
                         </a>
                     </div>
                     <!-- end swiper-slide -->
-                    <div class="swiper-slide"> The Biker<a href="#">Explore Case Study
+                    <div class="swiper-slide">Photo Shoot<a href="#">Explore Case Study
                         <div class="plus">+</div>
                     </a></div>
                     <!-- end swiper-slide -->
-                    <div class="swiper-slide"> Exhitibiton<a href="#">Explore Case Study
+                    <div class="swiper-slide">Ecommerce Support<a href="#">Explore Case Study
                         <div class="plus">+</div>
                     </a></div>
-                    <div class="swiper-slide"> Exhitibiton<a href="#">Explore Case Study
+                    <div class="swiper-slide">Events & Workshop<a href="#">Explore Case Study
                         <div class="plus">+</div>
                     </a></div>
                     <!-- end swiper-slide -->
@@ -59,10 +59,10 @@
         <!-- end slider -->
         <ul class="social-media">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            {#            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>#}
+            {#            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+            {#            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>#}
         </ul>
         <div class="scroll-down"><b>SCROLL DOWN</b><span></span></div>
         <!-- end scroll-down -->
@@ -72,11 +72,11 @@
     <!-- end header-spacing -->
     <main>
         <!-- end features-content -->
-        <section class="full-media-content bg-image" data-background="{% static 'assets/images/case03.png' %}">
+        <section class="full-media-content bg-image" data-background="{% static 'assets/images/aboutus.webp' %}">
             <div class="sides">
                 <figure class="wow fadeInLeft">
                     {#                    <video><source src="{% static 'assets/videos/video.mp4' %}"></video>#}
-                    <img src="{% static 'assets/images/case02.png' %}" alt="Image">
+                    <img src="https://themezinho.net/unicord/images/office01.jpg" alt="Image">
                 </figure>
             </div>
             <!-- end sides -->
@@ -94,21 +94,11 @@
         </section>
         <!-- end full-media-content -->
         <section class="works bg-image" style="padding-top: 20px;"
-                 data-background="{% static 'assets/images/case02.png' %}">
+                 data-background="{% static 'assets/images/service-red.webp' %}">
             <h1 style="color: white; font-weight: bold; padding-left: 27%;">SERVICES</h1>
             <br><br><br>
+
             <ul>
-                {% for service in services %}
-                    <li class="wow fadeInUp">
-                        <figure data-tilt><img src="{% static 'assets/images/works01.jpg' %}" alt="Image" class="thumb">
-                            <figcaption><img src="{% static 'assets/images/logo-brand.png' %}" alt="Image"
-                                             class="brand">
-                                <h3>{{ service.title }}</h3>
-                                <small>UI-UX Design, WordPress</small> <a href="case-details.html">CASE DETAILS</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                {% endfor %}
                 {% for service in services %}
                     <li class="wow fadeInUp">
                         {#                        <a href="Hello.html">#}
@@ -123,113 +113,94 @@
                         {#                        </a>#}
                     </li>
                 {% endfor %}
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works02.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand2.png' %}" alt="Image" class="brand">
-                            <h3>Red Tomato</h3>
-                            <small>Web Design, HTML, Development</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works03.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand3.png' %}" alt="Image" class="brand">
-                            <h3>Mr. Washington</h3>
-                            <small>App Development, UI-UX Design</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works04.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand2.png' %}" alt="Image" class="brand">
-                            <h3>House MD</h3>
-                            <small>Print Design, Branding</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works05.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand3.png' %}" alt="Image" class="brand">
-                            <h3>Celebrity</h3>
-                            <small>UI-UX Design, WordPress</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works06.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand3.png' %}" alt="Image" class="brand">
-                            <h3>Man in Black</h3>
-                            <small>HTML, Development</small> <a href="case-details.html">CASE DETAILS</a></figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works07.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand.png' %}" alt="Image" class="brand">
-                            <h3>Old School</h3>
-                            <small>App Design, Development</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works08.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand2.png' %}" alt="Image" class="brand">
-                            <h3>Paper Girl</h3>
-                            <small>UI-UX Design, HTML, Development</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="wow fadeInUp">
-                    <figure data-tilt><img src="{% static 'assets/images/works09.jpg' %}" alt="Image" class="thumb">
-                        <figcaption><img src="{% static 'assets/images/logo-brand3.png' %}" alt="Image" class="brand">
-                            <h3>Moto Wheel</h3>
-                            <small>Branding, Print Design</small> <a href="case-details.html">CASE DETAILS</a>
-                        </figcaption>
-                    </figure>
-                </li>
             </ul>
         </section>
         <!-- end works -->
+
+        {#        <section class="features-content">#}
+        {#            <div class="container">#}
+        {#                <div class="row">#}
+        {#                    <div class="col-lg-5 wow fadeInLeft">#}
+        {#                        <h2>Services WITH BrandXPT</h2>#}
+        {#                        <h6>All of our products exist to help you customize your website and add some advanced#}
+        {#                            functionality lacks.</h6>#}
+        {#                    </div>#}
+        {#                    <!-- end col-5 -->#}
+        {#                    <div class="col-lg-7">#}
+        {#                        <div class="row inner">#}
+        {#                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon01.png' %}"#}
+        {#                                                                    alt="Image">#}
+        {#                                <h4>CREATIVE & DIGITAL BRANDING AGENCY</h4>#}
+        {#                                <p> provides a fantastic living experience.</p>#}
+        {#                                <a href="#">LEARN MORE</a></div>#}
+        {#                            <!-- end col-4 -->#}
+        {#                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon02.png' %}"#}
+        {#                                                                    alt="Image">#}
+        {#                                <h4>WEBSITE DESIGN</h4>#}
+        {#                                <p>Website and add some advanced lacks.</p>#}
+        {#                                <a href="#">LEARN MORE</a></div>#}
+        {#                            <!-- end col-4 -->#}
+        {#                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon03.png' %}"#}
+        {#                                                                    alt="Image">#}
+        {#                                <h4>PHOTOSHOOT & ADOFLIMS</h4>#}
+        {#                                <p>Website and add some advanced functionality.</p>#}
+        {#                                <a href="#">LEARN MORE</a></div>#}
+        {#                            <!-- end col-4 -->#}
+        {#                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon02.png' %}"#}
+        {#                                                                    alt="Image">#}
+        {#                                <h4>ECOMMERCE SUPPORT</h4>#}
+        {#                                <p>Website and add some advanced functionality</p>#}
+        {#                                <a href="#">LEARN MORE</a></div>#}
+        {#                            <!-- end col-4 -->#}
+        {#                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon03.png' %}"#}
+        {#                                                                    alt="Image">#}
+        {#                                <h4>EVENTS & WORKSHOP</h4>#}
+        {#                                <p>Website and add some advanced functionality</p>#}
+        {#                                <a href="#">LEARN MORE</a></div>#}
+        {#                            <!-- end col-4 -->#}
+        {#                        </div>#}
+        {#                        <!-- end row inner -->#}
+        {#                    </div>#}
+        {#                    <!-- end col-7 -->#}
+        {#                </div>#}
+        {#                <!-- end row -->#}
+        {#            </div>#}
+        {#            <!-- end container -->#}
+        {#        </section>#}
+
+
         <section class="features-content">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 wow fadeInLeft">
-                        <h2>Services WITH BrandXPT</h2>
-                        <h6>All of our products exist to help you customize your website and add some advanced
-                            functionality lacks.</h6>
+                        <h2 style="color: #5e7003">Look WHAT We Do.</h2>
+                        <h6>We create exceptional digital creatives that looks cool.</h6>
                     </div>
                     <!-- end col-5 -->
                     <div class="col-lg-7">
                         <div class="row inner">
-                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon01.png' %}"
-                                                                    alt="Image">
-                                <h4>CREATIVE & DIGITAL BRANDING AGENCY</h4>
-                                <p> provides a fantastic living experience.</p>
-                                <a href="#">LEARN MORE</a></div>
-                            <!-- end col-4 -->
-                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon02.png' %}"
-                                                                    alt="Image">
-                                <h4>WEBSITE DESIGN</h4>
-                                <p>Website and add some advanced lacks.</p>
-                                <a href="#">LEARN MORE</a></div>
-                            <!-- end col-4 -->
-                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon03.png' %}"
-                                                                    alt="Image">
-                                <h4>PHOTOSHOOT & ADOFLIMS</h4>
-                                <p>Website and add some advanced functionality.</p>
-                                <a href="#">LEARN MORE</a></div>
-                            <!-- end col-4 -->
-                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon02.png' %}"
-                                                                    alt="Image">
-                                <h4>ECOMMERCE SUPPORT</h4>
-                                <p>Website and add some advanced functionality</p>
-                                <a href="#">LEARN MORE</a></div>
-                            <!-- end col-4 -->
-                            <div class="col-md-4 wow fadeInUp"><img src="{% static 'assets/images/icon03.png' %}"
-                                                                    alt="Image">
-                                <h4>EVENTS & WORKSHOP</h4>
-                                <p>Website and add some advanced functionality</p>
-                                <a href="#">LEARN MORE</a></div>
-                            <!-- end col-4 -->
+                            {% for project in projects %}
+                                <div class="col-md-4 wow fadeInUp">
+                                    <a href="{% url 'projects' %}"><img
+                                            style=" border-radius: 5%; height: 100%; width: 100%"
+                                            src="{{ project.img.url }}">
+                                        <h3 style="color: #0b2e13; font-weight: normal">{{ project.title }}</h3>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                            <div class="col-md-4 wow fadeInUp">
+                                <a href="{% url 'projects' %}"><img
+                                        style=" border-radius: 5%; height: 100%; width: 100%"
+                                        src="{% static 'assets/images/service-red.webp' %}">
+                                    <h4>DESIGN</h4></a>
+                            </div>
+                            <div class="col-md-4 wow fadeInUp">
+                                <a href="{% url 'projects' %}">
+                                    <img style="border-radius: 5%; height: 100%; width: 100%"
+                                         src="{% static 'assets/images/aboutus.webp' %}">
+                                    <h4>DESIGN</h4>
+                                </a>
+                            </div>
                         </div>
                         <!-- end row inner -->
                     </div>
@@ -238,6 +209,11 @@
                 <!-- end row -->
             </div>
             <!-- end container -->
+        </section>
+
+
+        <section class="project-card">
+
         </section>
 
         <section class="full-media-content">
@@ -250,80 +226,24 @@
             <!-- end sides -->
             <div class="sides inner-content">
                 <div class="inner">
-                    <h5>Collaborative approach</h5>
-                    <h2>INTERFACE</h2>
-                    <p>To create a powerful project once, a bit of luck is enough. To generate good products regularly,
-                        you need a strong foundation of experience and skills.</p>
-                    <a href="#">DISCOVER NOW</a></div>
+                    <h5>Marketing Secret</h5>
+                    <h2>DOWNLOAD</h2>
+                    <form action="{% url 'subscribe' %}" method="post">
+                        {% csrf_token %}
+                        <input type="email" name="email"
+                               style="background-color:#333; color:#fff; padding:10px; border:2px solid #555; border-radius:5px; outline:none; width:100%;"
+                               placeholder="Enter your email">
+                        {#                    <p>To create a powerful project once, a bit of luck is enough. To generate good products regularly,#}
+                        {#                        you need a strong foundation of experience and skills.</p>#}
+                        <br><br>
+                        <button type="submit">DOWNLOAD NOW</button>
+                    </form>
+                </div>
                 <!-- end inner -->
             </div>
             <!-- end sides -->
         </section>
 
-        <section class="works">
-            <div class="works__container container container--size-large">
-                <header class="works__header">
-                    <div class="row">
-                        <div class="col-8" data-aos="fade-up">
-                            <h2 class="works__title">
-                                <span>Look what</span>We do
-                            </h2>
-                        </div>
-                        <div class="col-4 text-md-right" data-aos="fade-up">
-                            <a class="works__more arrow-link--white arrow-link" href="projects-masonry.html">
-                                <span class="arrow-link__text">View all</span>
-                                <span class="arrow-link__icon">
-                    <svg width="75" height="75">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                            </a>
-                        </div>
-                    </div>
-                </header>
-                <div class="works__carousel carousel swiper-container __js_carousel" data-aos="fade-up">
-                    <div class="carousel__navigation">
-                        <button class="carousel__btn carousel__btn--prev" type="button">Prev</button>
-                        <button class="carousel__btn carousel__btn--next" type="button">Next</button>
-                    </div>
-                    <div class="swiper-wrapper">
-                        <a class="carousel__item carousel-card swiper-slide" href="single-project.html">
-                            <img src="img/picture/carousel/1.jpg" width="662" height="510" alt="Desk Issue 0.1">
-                            <span class="carousel-card__bottom">
-                  <span class="carousel-card__title">Desk Issue 0.1</span>
-                  <span class="carousel-card__icon">
-                    <svg width="29" height="29">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                </span>
-                        </a>
-                        <a class="carousel__item carousel-card swiper-slide" href="single-project.html">
-                            <img src="img/picture/carousel/2.jpg" width="662" height="510" alt="Desk Issue 0.1">
-                            <span class="carousel-card__bottom">
-                  <span class="carousel-card__title">Desk Issue 0.1</span>
-                  <span class="carousel-card__icon">
-                    <svg width="29" height="29">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                </span>
-                        </a>
-                        <a class="carousel__item carousel-card swiper-slide" href="single-project.html">
-                            <img src="img/picture/carousel/3.jpg" width="662" height="510" alt="Desk Issue 0.1">
-                            <span class="carousel-card__bottom">
-                  <span class="carousel-card__title">Desk Issue 0.1</span>
-                  <span class="carousel-card__icon">
-                    <svg width="29" height="29">
-                      <use xlink:href="#link-arrow"></use>
-                    </svg>
-                  </span>
-                </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="logos">
             <div class="container">
@@ -358,22 +278,7 @@
             <!-- end container -->
         </section>
         <!-- end logos -->
-        <footer class="footer">
-            <div class="container wow fadeIn">
-                <img src="{% static 'assets/images/logo.png' %}" alt="Image">
-                <h2>Don't be shy and<br>
-                    talk to us?</h2>
-                <h5>Say hello@brandxpt.com </h5>
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                </ul>
-                <span>© 2024 Brandxpt | All Rights Reserved</span></div>
-            <!-- end container -->
-        </footer>
+        {% include 'footer.html' %}
         <!-- end footer -->
     </main>
 {% endblock %}

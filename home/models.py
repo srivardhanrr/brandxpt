@@ -6,7 +6,7 @@ from django_resized import ResizedImageField
 
 class Service(models.Model):
     title = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='images/service/')
+    image = ResizedImageField(force_format="WEBP", quality=75, upload_to="images/services/")
     description = models.TextField()
 
     def __str__(self):
@@ -47,3 +47,10 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Subscribe(models.Model):
+    email = models.EmailField()
+
+    def __str__(self):
+        return self.email

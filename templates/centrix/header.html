@@ -1,17 +1,17 @@
 {% load static %}
 <header class="header header--secondary header--absolute __js_fixed-header header--height" xmlns:xlink="">
       <div class="header__container container container--size-large">
-        <a class="header__logo logo">
-            <h2>Brand<i>XPT</i></h2>
-{#          <svg width="76" height="19">#}
-{#            <use xlink:href="#v-logo"></use>#}
-{#          </svg>#}
+        <a class="header__logo logo" href="{% url 'home' %}">
+{#            <h2>Brand<i>XPT</i></h2>#}
+          <svg width="76" height="19">
+            <use xlink:href="#logo"></use>
+          </svg>
         </a>
         <div class="header__mobile mobile-canvas">
           <nav class="mobile-canvas__nav navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link animsition-link" href="about-us.html">BRAND GROWTH<span class="navigation__link-icon">
+                <a class="navigation__link animsition-link" href="">BRAND GROWTH<span class="navigation__link-icon">
                     <svg width="12" height="13">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
@@ -19,7 +19,7 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link animsition-link" href="about-us.html">Digital Solution<span class="navigation__link-icon">
+                <a class="navigation__link animsition-link" href="">Digital Solution<span class="navigation__link-icon">
                     <svg width="12" height="13">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
@@ -27,7 +27,7 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link animsition-link" href="about-us.html">Ecommerce Support<span class="navigation__link-icon">
+                <a class="navigation__link animsition-link" href="">Ecommerce Support<span class="navigation__link-icon">
                     <svg width="12" height="13">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
@@ -43,7 +43,7 @@
 {#                </a>#}
 {#              </li>#}
               <li class="navigation__item">
-                <a class="navigation__link animsition-link" href="projects-masonry.html">More<span class="navigation__link-icon">
+                <a class="navigation__link animsition-link" href="">More<span class="navigation__link-icon">
                     <svg width="12" height="13">
                       <use xlink:href="#link-arrow"></use>
                     </svg>
@@ -52,7 +52,7 @@
                 <div class="navigation__dropdown">
                   <ul class="navigation__dropdown-list">
                     <li class="navigation__dropdown-item">
-                      <a class="animsition-link" href="projects-masonry.html">Masonry<span class="navigation__dropdown-icon">
+                      <a class="animsition-link" href="">Thinking Lab<span class="navigation__dropdown-icon">
                           <svg width="12" height="13">
                             <use xlink:href="#link-arrow"></use>
                           </svg>
@@ -60,7 +60,7 @@
                       </a>
                     </li>
                     <li class="navigation__dropdown-item">
-                      <a class="animsition-link" href="projects-carousel.html">Carousel<span class="navigation__dropdown-icon">
+                      <a class="animsition-link" href="{% url 'services' %}">Services<span class="navigation__dropdown-icon">
                           <svg width="12" height="13">
                             <use xlink:href="#link-arrow"></use>
                           </svg>
@@ -68,7 +68,7 @@
                       </a>
                     </li>
                     <li class="navigation__dropdown-item">
-                      <a class="animsition-link" href="portfolio-tooltip.html">Tooltips<span class="navigation__dropdown-icon">
+                      <a class="animsition-link" href="{% url 'projects' %}">Projects<span class="navigation__dropdown-icon">
                           <svg width="12" height="13">
                             <use xlink:href="#link-arrow"></use>
                           </svg>
